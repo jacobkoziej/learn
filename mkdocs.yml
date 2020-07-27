@@ -1,4 +1,5 @@
 site_name: Koziej's Lessons
+site_url: https://learn.jacobkoziej.xyz
 
 theme:
   name: material
