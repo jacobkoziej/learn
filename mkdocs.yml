@@ -12,3 +12,5 @@ theme:
     code: Fira Mono
   icon:
     logo: material/book-open-page-variant
+  features:
+    - instant
