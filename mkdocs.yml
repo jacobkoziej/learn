@@ -7,3 +7,6 @@ theme:
     scheme: slate
     primary: deep purple
     accent: teal
+  font:
+    text: Fira Sans
+    code: Fira Mono
