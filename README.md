@@ -1,2 +1,2 @@
-# Koziej's Lessons
-> ***A curated collection of lessons***
+# Learn
+> ***A curated collection of lessons by Jacob Koziej***
