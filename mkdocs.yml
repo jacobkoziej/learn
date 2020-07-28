@@ -14,3 +14,4 @@ theme:
     logo: material/book-open-page-variant
   features:
     - instant
+    - tabs
