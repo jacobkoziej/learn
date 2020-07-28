@@ -3,3 +3,7 @@ site_url: https://learn.jacobkoziej.xyz
 
 theme:
   name: material
+  palette:
+    scheme: slate
+    primary: deep purple
+    accent: teal
