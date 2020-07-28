@@ -17,6 +17,21 @@ theme:
     - search
     - tabs
 
+extra:
+  social:
+    - icon: fontawesome/solid/map-marker-alt
+      link: https://jacobkoziej.xyz
+      name: jacobkoziej.xyz
+    - icon: fontawesome/solid/envelope
+      link: mailto:<jacobkoziej@gmail.com>
+      name: jacobkoziej@gmail.com
+    - icon: fontawesome/brands/github
+      link: https://github.com/jacobkoziej
+      name: GitHub
+    - icon: fontawesome/brands/instagram
+      link: https://www.instagram.com/koziej.jacob/
+      name: Instagram
+
 markdown_extensions:
   - toc:
       permalink: true
