@@ -15,3 +15,7 @@ theme:
   features:
     - instant
     - tabs
+
+markdown_extensions:
+  - toc:
+      permalink: true
