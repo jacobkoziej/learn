@@ -1,4 +1,7 @@
 site_name: learn.jacobkoziej.xyz
+site_description: A curated collection of lessons by Jacob Koziej
+site_author: Jacob Koziej
+copyright: Copyright &copy; 2020 Jacob Koziej
 site_url: https://learn.jacobkoziej.xyz
 repo_url: https://github.com/jacobkoziej/learn
 repo_name: jacobkoziej/learn
