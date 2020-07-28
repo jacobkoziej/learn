@@ -35,5 +35,6 @@ extra:
       name: Instagram
 
 markdown_extensions:
+  - smarty
   - toc:
       permalink: true
