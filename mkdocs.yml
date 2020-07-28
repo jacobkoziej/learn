@@ -10,3 +10,5 @@ theme:
   font:
     text: Fira Sans
     code: Fira Mono
+  icon:
+    logo: material/book-open-page-variant
