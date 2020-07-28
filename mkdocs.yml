@@ -14,6 +14,7 @@ theme:
     logo: material/book-open-page-variant
   features:
     - instant
+    - search
     - tabs
 
 markdown_extensions:
