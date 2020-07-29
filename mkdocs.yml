@@ -5,6 +5,7 @@ copyright: Copyright &copy; 2020 Jacob Koziej
 site_url: https://learn.jacobkoziej.xyz
 repo_url: https://github.com/jacobkoziej/learn
 repo_name: jacobkoziej/learn
+edit_uri: ""
 
 theme:
   name: material
