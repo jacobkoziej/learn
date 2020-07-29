@@ -40,6 +40,7 @@ extra:
       name: Instagram
 
 markdown_extensions:
+  - attr_list
   - smarty
   - toc:
       permalink: true
