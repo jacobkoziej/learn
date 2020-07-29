@@ -44,3 +44,6 @@ markdown_extensions:
   - smarty
   - toc:
       permalink: true
+
+nav:
+  - Home: index.md
