@@ -42,6 +42,7 @@ extra:
 markdown_extensions:
   - markdown.extensions.admonition
   - markdown.extensions.attr_list
+  - markdown.extensions.def_list
   - markdown.extensions.footnotes
   - markdown.extensions.smarty
   - markdown.extensions.toc:
@@ -62,6 +63,8 @@ markdown_extensions:
   - pymdownx.snippets
   - pymdownx.superfences
   - pymdownx.tabbed
+  - pymdownx.tasklist:
+      custom_checkbox: true
   - pymdownx.tilde
 
 nav:
