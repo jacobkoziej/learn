@@ -40,6 +40,10 @@ extra:
       name: Instagram
 
 markdown_extensions:
+  - markdown.extensions.attr_list
+  - markdown.extensions.smarty
+  - markdown.extensions.toc:
+      permalink: true
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
@@ -49,10 +53,6 @@ markdown_extensions:
   - pymdownx.keys
   - pymdownx.snippets
   - pymdownx.superfences
-  - attr_list
-  - smarty
-  - toc:
-      permalink: true
 
 nav:
   - Home: index.md
