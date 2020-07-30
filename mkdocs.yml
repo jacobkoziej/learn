@@ -40,8 +40,8 @@ extra:
       name: Instagram
 
 markdown_extensions:
-  - markdown.extensions.attr_list
   - markdown.extensions.admonition
+  - markdown.extensions.attr_list
   - markdown.extensions.footnotes
   - markdown.extensions.smarty
   - markdown.extensions.toc:
