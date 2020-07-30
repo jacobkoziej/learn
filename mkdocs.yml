@@ -49,3 +49,5 @@ nav:
   - Home: index.md
   - Courses:
     - Overview: courses.md
+  - About:
+    - License: about/license.md
