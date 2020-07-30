@@ -47,3 +47,5 @@ markdown_extensions:
 
 nav:
   - Home: index.md
+  - Courses:
+    - Overview: courses.md
