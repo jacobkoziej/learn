@@ -78,6 +78,6 @@ extra_javascript:
 nav:
   - Home: index.md
   - Courses:
-    - Overview: courses.md
+    - Course Descriptions: courses.md
   - About:
     - License: about/license.md
