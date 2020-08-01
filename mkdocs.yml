@@ -79,5 +79,7 @@ nav:
   - Home: index.md
   - Courses:
     - Course Descriptions: courses.md
+    - Arduino AVR Programming:
+      - Course Overview: courses/arduino-avr-programming.md
   - About:
     - License: about/license.md
