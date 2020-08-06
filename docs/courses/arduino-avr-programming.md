@@ -33,3 +33,22 @@ Although abstraction makes an Arduino a joy to work with, it comes at a cost.
 What most people don't seem to understand is that when you abstract something, you're giving away a varying amount of finite control.
 When just starting, you might not run into the limitations of Arduino C, but sooner or later, you're going to need to dive deeper.
 The great thing is that Arduino C is built upon AVR C, meaning you can inject snippets of AVR C to get back that finite control, but I won't get ahead of myself just yet.
+
+## What You Will Learn
+
+The purpose of this course is to get you comfortable enough with Arduino C so that you can move on to a *real* programming language.
+I recommend moving on to C or C++ as they are both widely used for programming microcontrollers or other embedded systems.
+The transition should be easy coming from a language like Arduino C since it's strongly typed.[^1]
+What I will teach you is:
+
+* The syntax and quirks of Arduino C
+* Extending the functionality of Arduino C
+* How to debug and catch bugs before they happen
+* Best practices to prevent technical debt[^2]
+* How to break down a problem and design a solution
+* Reading the manual (I can't stress the importance of this enough)
+
+By the end of the course, you'll have enough knowledge under your belt to create your own Arduino projects or modify someone else's.
+
+[^1]: [Wikipedia - *Strong and weak typing*](https://en.wikipedia.org/wiki/Strong_and_weak_typing)
+[^2]: [Wikipedia - *Technical debt*](https://en.wikipedia.org/wiki/Technical_debt)
