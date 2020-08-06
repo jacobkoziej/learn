@@ -1,3 +1,8 @@
+---
+titile: Arduino AVR Programming Course Overview
+description: Get started on what to expect from Arduino AVR Programming.
+---
+
 # Course Overview
 
 ## Arduino C Is a Child’s Programming Language
