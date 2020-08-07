@@ -50,5 +50,31 @@ What I will teach you is:
 
 By the end of the course, you'll have enough knowledge under your belt to create your own Arduino projects or modify someone else's.
 
+## How to Go Through This Course
+
+Don't expect anything if you don't put in the work.
+If you don't want to put in the effort, you might as well leave now and not waste your time.
+Now that I've gotten that out of the way, this course is meant for someone with a basic understanding of computer science.
+If you don't, no worries, you've just got extra homework to do when going through exercises.
+
+For those of you that already know how to code, you might find my methods of teaching a bit *unorthodox*.
+Instead of just presenting to you the facts of how Arduino C functions, I'll be guiding you through each exercise, making you type out *everything*.
+What you might find is that sometimes I will lead you into dead ends before explaining the "correct" way to solve a problem you might encounter.
+This seems to be a bit counter-intuitive at first, but it will prepare you for the real world when nobody's there to hold your hand as problems arise.
+
+Because of the way I'm structuring this course there are a few things you *must* do:
+
+* Type **everything**, no copypasta!
+* Type the code **exactly** as it appears, this includes comments
+* Make sure the code runs **exactly** as intended
+* You need to go through **all** exercises
+* Complete the extra credit, skip anything you can't figure out
+* Always try to figure out problems before asking for help
+
+Now the reason why I have these hard guidelines is that each exercise builds on the previous.
+You can think of it like building a skyscraper: you can't build the next floor if the previous one is incomplete.
+That being said, some of you might follow my instructions exactly and still not be able to program in Arduino C.
+Programming isn't for everyone, but if you try and are persistent, you're bound to improve.
+
 [^1]: [Wikipedia - *Strong and weak typing*](https://en.wikipedia.org/wiki/Strong_and_weak_typing)
 [^2]: [Wikipedia - *Technical debt*](https://en.wikipedia.org/wiki/Technical_debt)
