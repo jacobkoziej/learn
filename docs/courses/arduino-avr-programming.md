@@ -76,5 +76,12 @@ You can think of it like building a skyscraper: you can't build the next floor i
 That being said, some of you might follow my instructions exactly and still not be able to program in Arduino C.
 Programming isn't for everyone, but if you try and are persistent, you're bound to improve.
 
+## Developing a Strong Foundation
+
+Everyone is far from perfect, and that's fine, but it's important to take note of your shortcomings.
+You might have zero experience with a text-based programming language, or you might be a programming wiz, but I'd be willing to bet that there's at least one thing that you can improve.
+Either way, Arduino C can be *unforgiving* at times.
+Although it *tries* to be a noob-friendly programming language, Arduino C can only do so much if you don't pay attention.
+
 [^1]: [Wikipedia - *Strong and weak typing*](https://en.wikipedia.org/wiki/Strong_and_weak_typing)
 [^2]: [Wikipedia - *Technical debt*](https://en.wikipedia.org/wiki/Technical_debt)
