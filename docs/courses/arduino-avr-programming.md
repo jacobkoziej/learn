@@ -92,5 +92,13 @@ When you are writing code in the moment, it might make perfect sense, but what a
 What about the poor soul that'll read your code?
 I get that it's *easy* to hack something together, but it won't be fun when you're pulling your hair out trying to comprehend the spaghetti code you whipped up.
 
+### Attention to Detail
+
+There are **a lot** of *"gotcha"* moments when working with something like Arduino C.
+When working with a strongly typed language, it's easy to make small syntax errors.
+This could be as simple as forgetting a semicolon or as painful as forgetting a `#!arduino break` inside of a switch statement and then pulling your hair out trying to fix a silent bug.
+Detail is *everything* when programming.
+Neglect this one detail and be prepared for a long day of cursing out your computer.
+
 [^1]: [Wikipedia - *Strong and weak typing*](https://en.wikipedia.org/wiki/Strong_and_weak_typing)
 [^2]: [Wikipedia - *Technical debt*](https://en.wikipedia.org/wiki/Technical_debt)
