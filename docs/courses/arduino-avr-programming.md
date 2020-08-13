@@ -100,5 +100,18 @@ This could be as simple as forgetting a semicolon or as painful as forgetting a 
 Detail is *everything* when programming.
 Neglect this one detail and be prepared for a long day of cursing out your computer.
 
+### Planning & Debugging
+
+I wish I could tell you that Arduino C is a language that knows what you want to do.
+It would be nice if it just knew what you wanted to do and would correct your mistakes, but that's just a far-fetched dream.
+You can try to hack something together, but sooner or later it's going to lead to your downfall.
+Arduino C requires adequate planning, before attempting to create anything, you should almost always have a plan of attack.
+Even if it's just a small checklist, *anything* is better than nothing.
+
+In this sense, Arduino C somewhat forces you to become a disciplined programmer: always paying attention to detail.
+The advantage of having such strict rules is that it leaves little room for guessing what the computer is doing.
+Despite that, be prepared for bugs.
+Simplicity is a double-edged sword that should be respected.
+
 [^1]: [Wikipedia - *Strong and weak typing*](https://en.wikipedia.org/wiki/Strong_and_weak_typing)
 [^2]: [Wikipedia - *Technical debt*](https://en.wikipedia.org/wiki/Technical_debt)
