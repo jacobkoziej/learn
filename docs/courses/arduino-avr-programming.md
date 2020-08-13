@@ -83,5 +83,14 @@ You might have zero experience with a text-based programming language, or you mi
 Either way, Arduino C can be *unforgiving* at times.
 Although it *tries* to be a noob-friendly programming language, Arduino C can only do so much if you don't pay attention.
 
+### Reading & Writing
+
+I'll let you in on a little secret.
+The secret to good code is writing something easy to read.
+It may seem like something obvious, but it's a bit deceiving.
+When you are writing code in the moment, it might make perfect sense, but what about a few months down the line?
+What about the poor soul that'll read your code?
+I get that it's *easy* to hack something together, but it won't be fun when you're pulling your hair out trying to comprehend the spaghetti code you whipped up.
+
 [^1]: [Wikipedia - *Strong and weak typing*](https://en.wikipedia.org/wiki/Strong_and_weak_typing)
 [^2]: [Wikipedia - *Technical debt*](https://en.wikipedia.org/wiki/Technical_debt)
