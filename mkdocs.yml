@@ -83,5 +83,6 @@ nav:
       - Course Overview: courses/arduino-avr-programming.md
       - Unit 0&#58 The Setup:
         - Arduino Software: courses/arduino-avr-programming/unit-0/arduino-software.md
+        - Programming Environment: courses/arduino-avr-programming/unit-0/programming-environment.md
   - About:
     - License: about/license.md
