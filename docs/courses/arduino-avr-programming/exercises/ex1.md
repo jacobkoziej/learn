@@ -2,7 +2,12 @@
 
 As per tradition, your first program in *any* programming language is Hello World.
 Lucky for you, you'll be doing one better, blinking an LED!
-Open your text editor and type out the following code **exactly**.
+
+Before getting started, I recommend making a directory where you will store all your work to stay organized.
+If you're using the Arduino IDE press ++ctrl+n++ to create a new sketch, followed by ++ctrl+shift+s++ and save the new sketch as `ex1`.
+If you're using Arduino CLI, `#!bash cd` into a directory where you wish to store your work and run `#!bash arduino-cli sketch new ex1`.
+
+After creating the `ex1` sketch, edit `ex1.ino` in your text editor of choice and type out the following code **exactly**.
 
 ## The Code
 
