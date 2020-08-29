@@ -76,3 +76,36 @@ code/arduino-avr-programming/ex1/ex1.ino
 		Replace `/dev/ttyACM1` with the port of *your* Arduino.
 
 	If there were errors, make sure you have connected your Arduino correctly and selected the correct communication port.
+
+## The Breakdown
+
+**ex1.ino:1-4:** This hunk is what's called a multi-line comment.
+Any text between `#!arduino /* */` will be ignored by the compiler.
+
+**ex1.ino:6:** The `#!arduino setup()` function is a special function that *must* be included in every Arduino sketch.
+Code inside the `#!arduino setup()` function is run once and is where you should initialize anything needed before your main loop.
+For any function declaration to be complete, you must also declare a datatype.
+The `#!arduino setup()` function is of type `#!arduino void`, which indicates that the function is expected to return no value.
+
+**ex1.ino:7:** To begin the body of a function, you must wrap code inside curly braces.
+Function blocks begin with a `#!arduino {`.
+
+**ex1.ino:8:** The `#!arduino pinMode()` function allows you to specify pin behavior.
+The first argument is the pin number, while the second argument is the mode.
+
+**ex1.ino:9:** The `#!arduino }` indicates the end of the function block.
+
+**ex1.ino:11:** The `#!arduino loop()` function is another special function that *must* be included in every Arduino sketch.
+The `#!arduino loop()` function will run indefinitely and is where your main program should be.
+
+**ex1.ino:13:** Single line comments are started with `#!arduino //`.
+Anything past `#!arduino //` is considered a comment by the compiler.
+
+**ex1.ino:14:** The `#!arduino digitalWrite()` function allows you to set pin states.
+The first argument is the pin number, while the second argument is the state.
+
+**ex1.ino:15:** The `#!arduino delay()` function allows for you to set a time delay within your program.
+The function takes an integer value, for the amount of time, in milliseconds, you want to pause program execution.
+
+Take note of the general syntax.
+Notice that semicolons `#!arduino ;` are used to end statements, while commas `#!arduino ,` are used to list arguments.
