@@ -116,3 +116,15 @@ Now for the most exciting part: *the result*.
 On your Arduino board, next to pin 13, you should see an LED labeled L, blinking on and off every second.
 
 How exciting!
+
+## Breaking It
+
+Blinking an LED can only be fun for so long, so let me introduce you to *my favorite* part: *breaking it*.
+What I want you to do is see what you can change to break the program.
+Maybe change the order of things?
+Delete some things?
+Or even move them around in the program.
+
+The choice is yours; the important thing is to take note of *what* caused your program to no longer work.
+Spend a bit of time breaking this program.
+It might seem like there is little to do, but I assure you there are plenty of ways to break this simple program.
