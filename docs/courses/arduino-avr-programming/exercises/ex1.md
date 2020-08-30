@@ -109,3 +109,10 @@ The function takes an integer value, for the amount of time, in milliseconds, yo
 
 Take note of the general syntax.
 Notice that semicolons `#!arduino ;` are used to end statements, while commas `#!arduino ,` are used to list arguments.
+
+## The Result
+
+Now for the most exciting part: *the result*.
+On your Arduino board, next to pin 13, you should see an LED labeled L, blinking on and off every second.
+
+How exciting!
