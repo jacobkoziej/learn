@@ -128,3 +128,9 @@ Or even move them around in the program.
 The choice is yours; the important thing is to take note of *what* caused your program to no longer work.
 Spend a bit of time breaking this program.
 It might seem like there is little to do, but I assure you there are plenty of ways to break this simple program.
+
+## Extra Credit
+
+* Animate the LED to flash a pattern.
+* Visit the [official Arduino language reference](https://www.arduino.cc/reference/en/) and read up on all the functions used throughout the program.
+* Look up the constant for the built-in LED and set that as the pin throughout the program. Check if the program still works.
