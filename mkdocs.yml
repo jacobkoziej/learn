@@ -26,11 +26,17 @@ theme:
 extra:
   social:
     - icon: fontawesome/solid/map-marker-alt
-      link: https://jacobkoziej.xyz
-      name: jacobkoziej.xyz
+      link: https://jacobkoziej.xyz/
+      name: Homepage
+    - icon: fontawesome/brands/git-alt
+      link: https://git.jacobkoziej.xyz/
+      name: Git
+    - icon: fontawesome/solid/pen
+      link: https://blog.jacobkoziej.xyz/
+      name: Blog
     - icon: fontawesome/solid/envelope
       link: mailto:<jacobkoziej@gmail.com>
-      name: jacobkoziej@gmail.com
+      name: Email
     - icon: fontawesome/brands/github
       link: https://github.com/jacobkoziej
       name: GitHub
