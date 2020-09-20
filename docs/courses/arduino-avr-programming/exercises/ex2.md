@@ -17,6 +17,6 @@ code/arduino-avr-programming/ex2/ex2.ino
 
 ```makefile linenums="1"
 --8<--
-code/arduino-avr-programming/Makefile
+code/arduino-avr-programming/ex2/Makefile
 --8<--
 ```
