@@ -79,6 +79,8 @@ code/arduino-avr-programming/ex1/ex1.ino
 
 ## The Breakdown
 
+### ex1.ino
+
 **ex1.ino:1-4:** This hunk is what's called a multi-line comment.
 Any text between `#!arduino /* */` will be ignored by the compiler.
 
