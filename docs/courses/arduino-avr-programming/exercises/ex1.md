@@ -19,7 +19,7 @@ code/arduino-avr-programming/ex1/ex1.ino
 --8<--
 ```
 
-### Compiling & Flashing
+## Compiling & Flashing
 
 === "Arduino IDE"
 
