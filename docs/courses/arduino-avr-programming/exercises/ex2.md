@@ -36,3 +36,14 @@ code/arduino-avr-programming/ex2/ex2.ino
 code/arduino-avr-programming/ex2/Makefile
 --8<--
 ```
+
+## Automating Builds
+
+=== "Arduino IDE"
+
+	There isn't much to do in regards to automating builds when using the Arduino IDE because it already does this for you.
+	Although builds are automated, it doesn't hurt to learn some keybinds to save a second or two every time you want to compile or flash your program.
+
+	To compile your program press ++ctrl+r++
+
+	To flash your program press ++ctrl+u++
