@@ -47,3 +47,24 @@ code/arduino-avr-programming/ex2/Makefile
 	To compile your program press ++ctrl+r++
 
 	To flash your program press ++ctrl+u++
+
+## The Breakdown
+
+### ex2.ino
+
+**ex2.ino:6-7:** `#!arduino #define` is a directive that allows for the definition of macros within your source code.
+In this instance, we are creating constants for our source code.
+`#!arduino LED` corresponds to `#!arduino LED_BUILTIN` and `#!arduino DELAY` corresponds to `#!arduino 1000`.
+When the program gets compiled, the C preprocessor will first evaluate each macro before moving on to the next steps of the compiling process.
+
+**ex2.ino:11:** After the C preprocessor runs through this line, it will evaluate to `#!arduino pinMode(LED_BUILTIN, OUTPUT);`.
+
+**ex2.ino:17:** This line may look cryptic to a beginner, but it's simple.
+We know from the last lesson that `#!arduino digitalWrite()` takes two arguments, the pin and the state.
+The first argument, `#!adruino LED` is a macro which will evaluate to `#!arduino LED_BUILTIN`.
+The second argument is the inverse of the value returned by `#!arduino digitalRead()`.
+This function takes one parameter, a digital pin, and returns an `#!arduino int` value that is either `#!arduino 0` or `#!arduino 1`.
+The prefix `#!arduino !` will then get the inverse of the return value, or in other words, enable us to toggle the pin.
+In the end, this line will evaluate to either `#!arduino digitalWrite(LED_BULITIN, 0);` or `#!arduino digitalWrite(LED_BULITIN, 1);`.
+
+**ex2.ino:18:** This line shouldn't be too difficult; it will just evaluate the `#!arduino DELAY` macro to `#!arduino delay(1000);`.
