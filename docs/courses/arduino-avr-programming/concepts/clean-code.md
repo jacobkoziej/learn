@@ -8,3 +8,46 @@ Writing clear and concise code will only come from one thing: *experience*.
 That being said, there are some things you can do to speed up this process, namely learning the features of your language of choice.
 
 Without further adieu, here are some not-so-obvious features of C-like languages.
+
+## Conditional Statements
+
+One of the first things that can be cleaned up in beginner code is conditional statements.
+In most C-like languages, any non-zero value is considered true.
+
+As an example, let's look at the following code:
+
+```arduino
+if ((digitalRead(PIN) == HIGH) && (foo == 0)) {
+	foo = 1;
+} else {
+	foo = 0;
+}
+```
+
+Fairly ugly, but what if I told you it's possible to condense this into a single line of code?
+
+Let's start by cutting out some of the unnecessary clunks.
+
+```arduino
+if (digitalRead(PIN) && !foo) {
+	foo = 1;
+} else {
+	foo = 0;
+}
+```
+
+!!!note
+	In the Arduino standard, `#!arduino HIGH` is defined as `#!arduino 1`, and `#!arduino LOW` is defined as `#!arduino 0`.
+
+Right away, you can see how much more concise the code has become.
+
+The first thing to note here is the return value of `#!arduino digitalRead()`.
+Since we know that `#!arduino digitalRead()` returns an `#!arduino int` value of either `#!arduino 0` or `#!arduino 1`, we can condense our statement.
+In this situation, we're only interested in a `#!arduino HIGH` reading (which coincides with `#!arduino 1`), so we can drop the `#!arduino == HIGH` as the condition automatically evaluates to `#!arduino 1` (true).
+
+Along with a `#!arduino HIGH` reading from `#!arduino PIN`, we also want our dummy variable, `#!arduino foo`, to be `#!arduino 0`.
+Here is where our friend, the logical NOT (`#!arduino !`) operator, comes into play.
+If any condition's result is non-zero (true), it returns `#!arduino 0` (false), and if any condition's result is `#!arduino 0` (false), it returns `#!arduino 1` (true).
+Therefore, `#!arduino foo == 0` can be rewritten as `!foo` because it will only be true when `#!arduino foo` has the value of `#!arduino 0`.
+
+As nice as the current `#!arduino if-else` case is, it's not a single line like I promised.
