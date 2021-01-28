@@ -92,6 +92,8 @@ nav:
       - Exercises:
         - Ex 1&#58 The Hello World of Microcontrollers: courses/arduino-avr-programming/exercises/ex1.md
         - Ex 2&#58 Macro Definitions & Build Automation: courses/arduino-avr-programming/exercises/ex2.md
+      - Concepts:
+        - Clean Code: courses/arduino-avr-programming/concepts/clean-code.md
   - About:
     - About the Site: about.md
     - Licensing: about/licensing.md
