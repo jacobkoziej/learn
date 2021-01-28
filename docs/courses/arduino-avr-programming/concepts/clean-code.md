@@ -51,3 +51,28 @@ If any condition's result is non-zero (true), it returns `#!arduino 0` (false), 
 Therefore, `#!arduino foo == 0` can be rewritten as `!foo` because it will only be true when `#!arduino foo` has the value of `#!arduino 0`.
 
 As nice as the current `#!arduino if-else` case is, it's not a single line like I promised.
+
+### The Ternary Operator
+
+It turns out that the code above is a very common operation, so much so that it warranted an operator of its own.
+
+The ternary operator often catches new programmers off guard, but once learned, allows for farm more concise code.
+
+As promised, here is the single line of code:
+
+```arduino
+foo = (digitalRead(PIN) && !foo) ? 1 : 0;
+```
+
+Satisfying right?
+And this is just *one* of the little tricks you can take advantage of to write cleaner code.
+
+!!! tip
+	To easily remember how the ternary operator is structured, I like to think of it as a question:
+
+	```arduino
+	is_my_condition_true ? yes : no
+	```
+
+	If the condition evaluates to true, the first expression is evaluated and returned.
+	If the condition isn't true, the second expression is evaluated and returned.
