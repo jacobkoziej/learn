@@ -117,8 +117,8 @@ int motor_driver(uint8_t speed, uint8_t control_flags)
 	 */
 
 	// circuit protection
-	if (control_flags & (1 << 0) && control_flags & (1 << 3)) return -1;
-	if (control_flags & (1 << 1) && control_flags & (1 << 2)) return -1;
+	if (control_flags & (1 << 0 | 1 << 3)) return -1;
+	if (control_flags & (1 << 1 | 1 << 2)) return -1;
 
 	...
 ```
