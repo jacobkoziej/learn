@@ -26,7 +26,7 @@ if ((digitalRead(PIN) == HIGH) && (foo == 0)) {
 
 Fairly ugly, but what if I told you it's possible to condense this into a single line of code?
 
-Let's start by cutting out some of the unnecessary clunks.
+Let's start by cutting out some of the clunky code:
 
 ```arduino
 if (digitalRead(PIN) && !foo) {
