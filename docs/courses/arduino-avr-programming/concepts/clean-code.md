@@ -56,7 +56,7 @@ As nice as the current `#!arduino if-else` case is, it's not a single line like 
 
 It turns out that the code above is a very common operation, so much so that it warranted an operator of its own.
 
-The ternary operator often catches new programmers off guard, but once learned, allows for farm more concise code.
+The ternary operator often catches new programmers off guard, but once learned, allows for far more concise code.
 
 As promised, here is the single line of code:
 
