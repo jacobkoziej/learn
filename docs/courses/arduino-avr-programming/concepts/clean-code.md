@@ -77,6 +77,70 @@ And this is just *one* of the little tricks you can take advantage of to write c
 	If the condition evaluates to true, the first expression is evaluated and returned.
 	If the condition isn't true, the second expression is evaluated and returned.
 
+## Comments
+
+Comments, you hate writing them, but love reading them, that's of course if they're good comments.
+I find that commenting is often a struggle for beginner programmers because they're confused as to what to comment.
+The code produced is either absent of comments or marked to the brim with overly verbose comments.
+So then, what do we comment?
+
+### Why, Not How
+
+If you think about it, comments primarily exist to clarify things that may not be immediately obvious.
+That said, comments should explain **why** and **not how** you implemented something.
+What's important to realize here is that the code already shows the reader *how* you implemented a feature, but that doesn't necessarily coincide with an understanding as to *why* you implemented a feature.
+As a good rule of thumb, write comments to clarify things you wouldn't understand reading your code the first time around.
+
+Useless comments:
+
+```arduino
+int foo = 13;  // initialize integer variable foo with a value of 13
+// specify the pins of the seven segment display using an unsigned byte array
+uint8_t SEVEN_SEGMENT_PINS[8] = {3, 4, 5, 6, 7, 8, 9, 10};
+
+void setup()
+{
+	// initialize the serial interface with a baud rate of 9600
+	Serial.begin(9600);
+	// set the UPM01 and UPM00 flags in the UCSR0C register
+	UCSR0C |= _BV(UPM01) | _BV(UPM00);
+
+	// set the mode of SEVEN_SEGMENT_PINS 0 to 7 as outputs
+	for (int i = 0; i < 8; i++)
+		pinMode(SEVEN_SEGMENT_PINS[i], OUTPUT);
+
+	++foo;  // increment variable foo by 1
+}
+```
+
+Useful comments:
+
+```arduino
+int foo = 13;
+uint8_t SEVEN_SEGMENT_PINS[8] = {3, 4, 5, 6, 7, 8, 9, 10};
+
+void setup()
+{
+	Serial.begin(9600);
+	// enable odd parity for serial communication
+	UCSR0C |= _BV(UPM01) | _BV(UPM00);
+
+	// initialize the seven segment display
+	for (int i = 0; i < 8; i++)
+		pinMode(SEVEN_SEGMENT_PINS[i], OUTPUT);
+
+	++foo;
+}
+```
+
+### Remember Why You're Commenting
+
+When you write code, you're more often than not writing something that's going to be read by someone else or yourself months, if not years down the line.
+Remember, the goal is to write something efficient **and easy to read**.
+What use is the fastest code in the world if someone must invest hours of their time figuring out why you implemented a feature?
+As tempting as it may be to exclude comments, you'll be thanking me when you come back to your code later down the line.
+Either that or you'll be cursing out your program. You have been warned!
+
 ## Braces
 
 Brace styling is one of the more opinionated sections, and I'm not someone to force my opinion onto anyone ***but*** some styles are arguably better than others.
