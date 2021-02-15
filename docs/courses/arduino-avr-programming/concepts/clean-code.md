@@ -141,6 +141,30 @@ What use is the fastest code in the world if someone must invest hours of their 
 As tempting as it may be to exclude comments, you'll be thanking me when you come back to your code later down the line.
 Either that or you'll be cursing out your program. You have been warned!
 
+## Naming Conventions
+
+It's often joked that naming things is one of the hardest parts of programming, and quite frankly, it isn't that far from the truth.
+Unfortunately, I can't help you come up with clever and creative names.
+Fortunately, though, I can help you in creating a good naming convention.
+Not only does a good naming convention make for clean code, but it saves time and reduces confusion.
+
+### Constants v. Variables
+
+In my opinion, the difference between constants and variables should be *very* pronounced to remove any chance of confusion.
+In general, capitalize constants (i.e. `#!arduino F_CPU`), and lowercase variables (i.e. `#!arduino var_delay`).
+Not only does such a naming convention allow for easy differentiation between constants and variables throughout your program, but it coincides with constant declarations in most header files.
+
+### Verbosity
+
+Naming verbosity is something that I see gotten wrong time and time again.
+Don't call your iterative variable in a `#!arduino for` loop `#!arduino local_iteration_variable`, or call a globally-scoped variable `#!arduino x`.
+Generally speaking, when the scope of a variable decreases, so should its specificity.
+On the other extreme of the spectrum, be concise when naming variables or functions.
+Please don't name a function `#!arduino fast_inverse_square_root()`, `#!arduino Q_rsqrt()` is more than enough.
+
+!!! tldr
+	Don't be too vague or too specific; shorten words while staying clear and concise.
+
 ## Braces
 
 Brace styling is one of the more opinionated sections, and I'm not someone to force my opinion onto anyone ***but*** some styles are arguably better than others.
