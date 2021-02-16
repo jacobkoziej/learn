@@ -165,6 +165,72 @@ Please don't name a function `#!arduino fast_inverse_square_root()`, `#!arduino 
 !!! tldr
 	Don't be too vague or too specific; shorten words while staying clear and concise.
 
+## Whitespace
+
+Whitespace: it's all the space you don't see.
+In case you're unfamiliar with whitespace, it is *"any character or series of characters that represent horizontal or vertical space in typography"*.[^1]
+In most languages, whitespace serves no purpose besides making code easier to read, and because of this feature, things like the whitespace programming language actually exist.[^2]
+As cool as this esoteric programming language is, what can you do about whitespace to make your code easier to read?
+
+### Indentation
+
+Indents serve as a way to divide your code into logical blocks.
+I personally prefer 8-character wide indents.
+Some may view this as excessive, but the whole premise behind indents is to clearly define blocks of code, something difficult to do with 4 or 2 character wide indents.
+Others may argue that such wide indents make code difficult to read.
+The answer to that is if you need more than three levels of indentation, you're probably not writing the best code and should rethink your current implementation.
+
+### Long Lines
+
+It's a good rule of thumb to keep your code below 80 characters in width.
+It may seem like an arbitrary value, but it actually stems from old terminals that were 80 characters wide.
+Nevertheless, this isn't a hard limit, just an indicator if you should restructure your code.
+The only exception to this rule would be breaking user-visible strings, as this breaks the ability to grep for them, something crucial in multi-file projects.
+
+!!! info "Did you know?"
+	Lines of code is a terrible way to measure the quality of code!
+	You may be mistaken in thinking that more lines of code equate to more work done, and with that, I'll leave you with the following:
+
+	!!! quote
+		"One of my most productive days was throwing away 1,000 lines of code." - *Ken Thompson*
+
+	On the other end of the extreme, less does not always mean better.
+	Don't be mistaken into thinking fewer lines of code always means a more efficient program.
+	In fact, most programming languages allow for an entire program to be condensed into a single line, making this measurement misleading at best!
+
+### Chunks
+
+Break your code into chunks as most functions have distinct steps to them.
+
+For example:
+
+```arduino
+void setup()
+{
+	// step 1: initialize the serial interface
+	Serial.begin(9600);
+
+	// step 2: obtain initial sensor readings
+	for (int i = 0; i < 4; i++) {
+		pinMode(INPUT_ARR[i], INPUT);
+		init_state[i] = analogRead(INPUT_ARR[i]);
+	}
+
+	// step 3: set the initial state of pins
+	for (int i = 0; i < 3; i++) {
+		pinMode(OUTPUT_ARR[i], OUTPUT);
+		analogWrite(OUTPUT_ARR[i], INIT_VAL[i]);
+	}
+}
+```
+
+!!! note
+	The comments above serve no purpose besides highlighting the distinct steps.
+
+The code above isn't all that useful, but it does illustrate the point I'm trying to get across.
+You can effortlessly see the steps of the `#!arduino setup()` function: the initialization of the serial interface, obtaining initial sensor readings, and setting initial pin states.
+By breaking a function into chunks, you break down a complex solution into its simple components, making it far easier to read and understand.
+
 ## Braces
 
 Brace styling is one of the more opinionated sections, and I'm not someone to force my opinion onto anyone ***but*** some styles are arguably better than others.
@@ -210,3 +276,6 @@ int motor_driver(uint8_t speed, uint8_t control_flags)
 
 	...
 ```
+
+[^1]: [Wikipedia - *Whitespace character*](https://en.wikipedia.org/wiki/Whitespace_character)
+[^2]: [Wikipedia - *Whitespace (programming language)*](https://en.wikipedia.org/wiki/Whitespace_%28programming_language%29)
