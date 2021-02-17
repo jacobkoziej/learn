@@ -94,6 +94,7 @@ nav:
         - Ex 2&#58 Macro Definitions & Build Automation: courses/arduino-avr-programming/exercises/ex2.md
       - Concepts:
         - Clean Code: courses/arduino-avr-programming/concepts/clean-code.md
+        - Memory Management: courses/arduino-avr-programming/concepts/memory-management.md
   - About:
     - About the Site: about.md
     - Licensing: about/licensing.md
