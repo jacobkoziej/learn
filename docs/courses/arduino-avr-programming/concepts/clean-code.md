@@ -330,5 +330,17 @@ z = y--;  // y is 12 while z is 13
 What to note here, the prefix increment/decrement will increase or decrease a variable before being read, while the postfix increment/decrement will read a variable, *then* increase or decrease a variable.
 It's a minute feature, but knowing this will save you from a *very* bad headache later down the road.
 
+## Endnotes
+
+There is no *"right"* or *"wrong"* way to write code.
+Everyone has their own style.
+These are merely *my recommendations*.
+For all I care, you can write all your code on a single line; I just don't think you'll be having a great time.
+
+What I hope you do is *explore*.
+Read other people's code.
+Take notes on what they did well and what they did poorly.
+I can assure you you're going to learn something new, or at the very least, be amused by a great example of what *not* to do.
+
 [^1]: [Wikipedia - *Whitespace character*](https://en.wikipedia.org/wiki/Whitespace_character)
 [^2]: [Wikipedia - *Whitespace (programming language)*](https://en.wikipedia.org/wiki/Whitespace_%28programming_language%29)
