@@ -277,5 +277,58 @@ int motor_driver(uint8_t speed, uint8_t control_flags)
 	...
 ```
 
+## Compound Assignment
+
+Programmers are *lazy*, at least the good ones.
+I use lazy lightly because what I mean is that programmers often try to do something in the least repetitive way possible.
+Given a programmer's mission of getting as much done with as little effort possible, you are obligated to make use of compound assignments or risk the sin of typing more than you have to.
+
+Jokes aside, it's important to use your tools effectively.
+Much like you wouldn't dig a hole with a spoon, you don't want to type out compound operations defined by your language's standard.
+
+### Compound Operators
+
+|  Compound Operation | Non-compound Equivalent |
+| :-----------------: | :---------------------: |
+| `#!arduino x *= y`  | `#!arduino x = x * y`   |
+| `#!arduino x /= y`  | `#!arduino x = x / y`   |
+| `#!arduino x += y`  | `#!arduino x = x + y`   |
+| `#!arduino x -= y`  | `#!arduino x = x - y`   |
+| `#!arduino x %= y`  | `#!arduino x = x % y`   |
+| `#!arduino x &= y`  | `#!arduino x = x & y`   |
+| `#!arduino x |= y`  | `#!arduino x = x | y`   |
+| `#!arduino x ^= y`  | `#!arduino x = x ^ y`   |
+| `#!arduino x <<= y` | `#!arduino x = x << y`  |
+| `#!arduino x >>= y` | `#!arduino x = x >> y`  |
+
+### Prefix v. Postfix (Increment/Decrement)
+
+You're probably familiar with the increment/decrement (`#!arduino ++`/`#!arduino --`) operators, but you may not be aware that their placement matters at times.
+
+Let's look at the following examples:
+
+*Prefix:*
+
+```arduino
+int x, y, z;
+x = y = 13;
+
+z = ++x;  // x and z are both 14
+z = --y;  // y and z are both 12
+```
+
+*Postfix:*
+
+```arduino
+int x, y, z;
+x = y = 13;
+
+z = x++;  // x is 14 while z is 13
+z = y--;  // y is 12 while z is 13
+```
+
+What to note here, the prefix increment/decrement will increase or decrease a variable before being read, while the postfix increment/decrement will read a variable, *then* increase or decrease a variable.
+It's a minute feature, but knowing this will save you from a *very* bad headache later down the road.
+
 [^1]: [Wikipedia - *Whitespace character*](https://en.wikipedia.org/wiki/Whitespace_character)
 [^2]: [Wikipedia - *Whitespace (programming language)*](https://en.wikipedia.org/wiki/Whitespace_%28programming_language%29)
