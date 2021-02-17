@@ -7,7 +7,7 @@ Code is an art form, and just like art, it is never finished, only abandoned.
 Writing clear and concise code will only come from one thing: *experience*.
 That being said, there are some things you can do to speed up this process, namely learning the features of your language of choice.
 
-Without further adieu, here are some not-so-obvious features of C-like languages.
+Without further adieu, here are some not-so-obvious things you can do to write more elegant code.
 
 ## Conditional Statements
 
