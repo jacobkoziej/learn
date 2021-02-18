@@ -27,3 +27,66 @@ EEPROM - 1kb
 	You can regain the 0.5kb of flash memory lost to the Arduino bootloader by flashing your Arduino using an ISP programmer.
 	Although you regain some lost space, you will lose the ability to flash your program using the built-in USB serial programmer.
 	To regain this functionality, you will need to burn the Arduino bootloader using your ISP programmer.
+
+### Memory Addresses
+
+Just like real locations have addresses, so do memory cells.
+Much like we need an address to know how to get somewhere in real life, a computer needs a memory address to know where to access data.
+
+The ATmega328P has a Harvard architecture where the processor has separate busses for program instructions and data stored in memory.
+If that made absolutely no sense, that's okay!
+All you need to understand from what I mentioned above is that because of the ATmega328P's architecture: it's possible to have places in memory with the same address.
+With that said, here are the memory addresses for each of the aforementioned memories:
+
+!!! note
+	These diagrams aren't to scale.
+
+Program Memory:
+
+```
++-------------------+  0x0000
+|                   |
+|                   |
+|                   |
+|                   |
+| Application Flash |
+|                   |
+|                   |
+|                   |
+|                   |
+|~~~~~~~~~~~~~~~~~~~|
+|    Boot Flash     |
++-------------------+  0x3FFF
+```
+
+Data Memory:
+
+```
++-------------------+
+|   32 Registers    |  0x0000 - 0x001F
++-------------------+
+|    64 I/O Reg.    |  0x0020 - 0x005F
++-------------------+
+| 160 Ext I/O Reg.  |  0x0060 - 0x00FF
++-------------------+
+|                   |
+|   Internal SRAM   |  0x0100 - 0x08FF
+|                   |
++-------------------+
+```
+
+EEPROM Data Memory:
+
+```
++-------------------+  0x0000
+|                   |
+|      EEPROM       |
+|                   |
++-------------------+  0x03FF
+```
+
+As you can see, there are a fair bit of memory addresses.
+Luckily for you, you don't have to worry about most of these addresses. The only real address range that you should be concerned about is the one related to EEPROM, and that's just if you're using it.
+All the other addresses you'll have to worry about are either managed by the compiler or defined as macros by AVR Libc.
+
+It might seem useless to know all this information right now, but it will be critical to understanding more complex topics down the line like pointers or modifying hardware registers.
