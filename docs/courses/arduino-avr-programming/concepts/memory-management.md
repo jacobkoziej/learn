@@ -90,3 +90,13 @@ Luckily for you, you don't have to worry about most of these addresses. The only
 All the other addresses you'll have to worry about are either managed by the compiler or defined as macros by AVR Libc.
 
 It might seem useless to know all this information right now, but it will be critical to understanding more complex topics down the line like pointers or modifying hardware registers.
+
+### Program Memory
+
+The in-system programmable flash program memory is where Arduino sketches reside.
+The keen-eyed of you may have noticed that the address range of the flash memory has about 16k possible addresses, half the advertised size.
+That's not a mistake.
+Since all AVR instructions are either 16 or 32 bits wide, the flash memory consists of 16k 16-bit cells, or in other words, 32k bytes.
+
+Flash, although non-volatile, is read-only during program execution.
+To modify any value stored in the flash memory, you must first copy it into SRAM and then work with the duplicate.
